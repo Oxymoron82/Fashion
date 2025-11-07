@@ -1,0 +1,127 @@
+body {
+  font-family: monospace;
+  background-image: url("./images/back2.jpg");
+  margin: 0;
+  padding: 0;
+
+  /* делаем flex-контейнер */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5); /* белая прозрачная подложка */
+  z-index: -1; /* чтобы не перекрывала контент */
+}
+header {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #566d76, #ffdde1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+  color: aliceblue;
+}
+
+header nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #ff6347;
+}
+
+h2 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 10px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+}
+
+.contacts-container {
+  max-width: 600px;
+  margin: 60px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contacts-container h2 {
+  margin-bottom: 20px;
+  color: #634646;
+}
+
+.contact-info {
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 120px;
+}
+
+.contact-form button {
+  background: #ff6347;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background 0.3s;
+}
+main {
+  flex: 1; /* растягиваем основную часть */
+}
+.contact-form button:hover {
+  background: #e5533d;
+}
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #566d76;
+}

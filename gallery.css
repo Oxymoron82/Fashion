@@ -1,0 +1,92 @@
+body {
+  font-family: monospace;
+  background-image: url("./images/back2.jpg");
+  margin: 0;
+  padding: 0;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5); /* белая прозрачная подложка */
+  z-index: -1; /* чтобы не перекрывала контент */
+}
+header {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #566d76, #ffdde1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: aliceblue;
+  margin-bottom: 5px;
+}
+
+header nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #ff6347;
+}
+
+h2 {
+  display: block;
+  font-size: 2em;
+  color: aliceblue;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 10px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+}
+
+.photoshoot {
+  text-align: center;
+  padding: 50px 30px;
+}
+
+.photoshoot .gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.photoshoot img {
+  max-width: 300px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.photoshoot img:hover {
+  transform: scale(1.05);
+}
+
+hr {
+  margin: 60px 0;
+  border: 1px solid #ccc;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #566d76;
+}
